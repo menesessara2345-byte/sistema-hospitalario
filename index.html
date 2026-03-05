@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sistema Hospitalario</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- LOGIN -->
+
+<div id="login" class="login">
+
+<h2>Sistema Hospitalario</h2>
+
+<input id="usuario" placeholder="Usuario">
+<input type="password" id="password" placeholder="Contraseña">
+
+<button onclick="login()">Iniciar Sesión</button>
+
+<hr>
+
+<h3>Registrarse</h3>
+
+<input id="nuevoUsuario" placeholder="Usuario">
+<input type="password" id="nuevaPassword" placeholder="Contraseña">
+
+<button onclick="registrar()">Registrarme</button>
+
+</div>
+
+
+
+<!-- SISTEMA -->
+
+<div id="sistema" class="container hidden">
+
+<!-- PANEL -->
+
+<div class="panel">
+
+<h2>PANEL DE CONTROL</h2>
+
+<button onclick="mostrar('inicio')">Inicio</button>
+
+<button onclick="location.href='pacientes.php'">
+Gestión pacientes
+</button>
+
+<button>Gestión citas</button>
+
+<button>Médicos</button>
+
+<button>Plan complementario</button>
+
+</div>
+
+
+
+<!-- CONTENIDO -->
+
+<div id="inicio" class="content">
+
+<h3>HORARIOS DE ATENCIÓN</h3>
+
+<ul>
+<li>Lunes a viernes 8am - 5pm</li>
+<li>Sábados 8am - 1pm</li>
+<li>Entrega de medicamentos</li>
+</ul>
+
+<h3>CONSULTAS</h3>
+
+<ul>
+<li>Consulta externa</li>
+<li>Urgencias</li>
+<li>Laboratorio clínico</li>
+<li>Odontología</li>
+</ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
